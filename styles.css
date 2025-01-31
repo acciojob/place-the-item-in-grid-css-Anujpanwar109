@@ -1,14 +1,17 @@
+/* Ensure no extra spacing is added */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Your CSS Code here. */
 /* Grid Container */
 .holder {
     display: grid;
     width: 200px;
     height: 200px;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 equal rows */
-    gap: 5px; /* Optional: adds spacing between grid items */
-    background-color: lightgray; /* Just for visibility */
+    grid-template-columns: 100px 100px; /* Explicit 100px columns */
+    grid-template-rows: 100px 100px; /* Explicit 100px rows */
 }
 
 /* Grid Items */
@@ -19,5 +22,5 @@
     background-color: steelblue;
     color: white;
     font-size: 20px;
-    border: 1px solid black;
+    border: 1px solid black; /* Remove this if affecting size */
 }
